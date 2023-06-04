@@ -6,7 +6,8 @@ export default function HomeCard({ image, title, description }) {
         <div className={styles.card}>
             <div className={styles.cardImage} style={{
                 backgroundImage: `url(${image})`
-            }}></div>
+            }}>
+            </div>
             <div className={styles.cardDescription}>
                 <p className={styles.textTitle}> {title}</p>
                 <p className={styles.textBody}>{description}</p>

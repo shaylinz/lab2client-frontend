@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '@/styles/Home.module.css';
 import Link from "next/link";
 
+
 export default function Hero() {
     const [searchKeys, setSearchKeys] = React.useState("");
     const handleChange = event => {
@@ -35,3 +36,4 @@ export default function Hero() {
         </div>
     )
 }
+ 

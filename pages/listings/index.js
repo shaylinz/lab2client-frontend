@@ -5,10 +5,21 @@ import styles from '../../styles/Listings.module.css';
 import { useEffect, useState } from 'react';
 import ListingsWrapper from '@/components/ListingsWrapper';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+
 
 export default function Listings({ query }) {
+
+    //added part
+    const router = useRouter();
+    const { search } = router.query;
+
     let [data, setData] = useState(null);
-    const [searchKeys, setSearchKeys] = React.useState("");
+    const [searchKeys, setSearchKeys] = React.useState(search);
+
+
+    
 
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
