@@ -246,11 +246,8 @@ const DownloadForm = () => {
   };
 
   return (
-    <div  className={styles.btn}>
-
-      <h1 className={styles.textBody}></h1>
-
-      <button  className={styles.btn} >Download HTML Form</button>
+    <div  >
+      
     </div>
   );
 };
